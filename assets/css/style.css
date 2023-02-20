@@ -126,6 +126,10 @@ main [class^="col_"] {
   background-color: var(--neutral-lighter);
 }
 
+#planning {
+  background-color: var(--primary);
+}
+
 /* #endregion Main */
 
 

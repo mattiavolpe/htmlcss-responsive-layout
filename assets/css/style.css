@@ -458,13 +458,22 @@ main .row > [class^="col_"] {
   scale: 0.3;
 }
 
-
 /* #endregion Main */
 
 /* #region Footer */
 
 #app_footer {
   background-color: var(--neutral-dark);
+  color: var(--lighter);
+}
+
+#app_footer .container > p {
+  margin-bottom: 80px;
+}
+
+#app_footer .footer_link {
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 /* #endregion Footer */
@@ -563,9 +572,13 @@ main .row > [class^="col_"] {
     width: 80%;
   }
 
-
   #about .img_wrapper::before {
     right: 10%;
+  }
+
+  #app_footer > .container {
+    width: 55%;
+    max-width: 500px;
   }
 
 }

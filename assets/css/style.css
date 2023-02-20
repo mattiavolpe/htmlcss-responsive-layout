@@ -38,6 +38,7 @@ a {
   color: inherit;
 }
 
+/* TO USE FONT-AWESOME ICONS AS CONTENT IN CSS PSEUDO-ELEMENTS */
 .icon::before {
   display: inline-block;
   text-rendering: auto;
@@ -52,9 +53,33 @@ section,
 }
 
 main .row > [class^="col_"] {
-  margin-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+main .row > [class^="col_"],
+#demo i.fa-4x {
+  margin-bottom: 30px;
+}
+
+#benefits h2,
+#app_footer .container > p {
+  margin-bottom: 80px;
+}
+
+#planning h3,
+#planning h3 + p,
+#testimonials blockquote,
+#benefits .card h4,
+#about .card_quotes blockquote {
+  margin: 30px 0;
+}
+
+#testimonials h2,
+#cta h3,
+#cta h2,
+#cta .btn {
+  margin: 40px 0;
 }
 
 /* #region Colors and Backgrounds */
@@ -294,10 +319,6 @@ main .row > [class^="col_"] {
   padding-bottom: 0;
 }
 
-#demo i.fa-4x {
-  margin-bottom: 30px;
-}
-
 #demo h3,
 #demo i {
   color: var(--neutral-medium);
@@ -305,7 +326,8 @@ main .row > [class^="col_"] {
 
 #demo p,
 #demo a,
-#demo .d_flex > div:last-of-type {
+#demo .d_flex > div:last-of-type,
+#benefits .card .btn.md {
   margin-top: 30px;
 }
 
@@ -313,9 +335,8 @@ main .row > [class^="col_"] {
   margin: 60px 0;
 }
 
-#planning h3,
-#planning h3 + p {
-  margin: 30px 0;
+#planning .row > div:last-child {
+  margin-bottom: 0;
 }
 
 #planning h3 + p {
@@ -333,19 +354,11 @@ main .row > [class^="col_"] {
   font-weight: 400;
 }
 
-#testimonials h2 {
-  margin: 30px 0;
-}
-
 #testimonials .card img {
   width: 60%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
-}
-
-#testimonials blockquote {
-  margin: 30px 0;
 }
 
 #testimonials blockquote::before {
@@ -364,10 +377,6 @@ main .row > [class^="col_"] {
   font-weight: 700;
 }
 
-#benefits h2 {
-  margin-bottom: 30px;
-}
-
 #benefits .card .index,
 #benefits .card h4 {
   font-weight: 700;
@@ -377,13 +386,8 @@ main .row > [class^="col_"] {
   font-size: 2.5rem;
 }
 
-#benefits .card h4 {
-  margin: 30px 0;
-}
-
 #benefits .card .btn.md {
   font-weight: 700;
-  margin-top: 30px;
 }
 
 #about h2 {
@@ -417,25 +421,18 @@ main .row > [class^="col_"] {
 
 #about .card_quotes blockquote {
   font-weight: 700;
-  margin: 30px 0;
 }
 
 #cta h4 {
   font-weight: 400;
 }
 
-#cta h3 {
-  margin: 40px 0;
-}
-
 #cta h2 {
-  margin: 40px 0;
   color: var(--accent);
 }
 
 #cta .btn {
   font-weight: 700;
-  margin: 40px 0;
 }
 
 #cta .privacy {
@@ -456,10 +453,6 @@ main .row > [class^="col_"] {
 
 #app_footer {
   background-color: var(--neutral-dark);
-}
-
-#app_footer .container > p {
-  margin-bottom: 80px;
 }
 
 #app_footer .footer_link {
@@ -532,10 +525,7 @@ main .row > [class^="col_"] {
     transform: translate(11.5%, 0);
   }
 
-  #planning .row .img_wrapper img {
-    margin: 50px 0;
-  }
-
+  #planning .row .img_wrapper img,
   #testimonials h2 {
     margin: 50px 0;
   }
@@ -544,6 +534,10 @@ main .row > [class^="col_"] {
     display: flex;
     align-items: center;
     text-align: left;
+  }
+
+  #testimonials .card img {
+    width: 80%;
   }
 
   #testimonials blockquote {

@@ -444,7 +444,7 @@ main .row > [class^="col_"],
   position: absolute;
   top: 0;
   right: 40%;
-  scale: 4;
+  transform: scale(4);
   transform-origin: 100% 0;
   font: var(--fa-font-solid);
   content: "\f10d";
@@ -471,7 +471,7 @@ main .row > [class^="col_"],
   display: inline-block;
   font: var(--fa-font-solid);
   content: "\f111";
-  scale: 0.3;
+  transform: scale(0.3);
 }
 
 /* #endregion Main */

@@ -16,6 +16,18 @@
   --accent: #fdc15f;
 }
 
+#demo,
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+main [class^="col_"] {
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* #endregion Common */
 
 /* #region Utilities */
@@ -28,6 +40,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -15px;
 }
 
 .col_1 {
@@ -78,6 +91,11 @@
   width: 100%;
 }
 
+.card {
+  padding: 30px;
+  height: 100%;
+}
+
 /* #endregion Utilities */
 
 /* #region Debug */
@@ -101,6 +119,15 @@
 }
 
 /* #endregion Header */
+
+/* #region Main */
+
+#demo .row .card {
+  background-color: var(--neutral-lighter);
+}
+
+/* #endregion Main */
+
 
 /* #region Responsive */
 

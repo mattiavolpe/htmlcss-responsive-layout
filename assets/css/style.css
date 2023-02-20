@@ -45,6 +45,8 @@ a {
   -webkit-font-smoothing: antialiased;
 }
 
+/* #region Common Margins and Paddings */
+
 #demo,
 section,
 #app_footer {
@@ -55,6 +57,13 @@ section,
 main .row > [class^="col_"] {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+#demo p,
+#demo a,
+#demo .d_flex > div:last-of-type,
+#benefits .card .btn.md {
+  margin-top: 30px;
 }
 
 main .row > [class^="col_"],
@@ -82,7 +91,9 @@ main .row > [class^="col_"],
   margin: 40px 0;
 }
 
-/* #region Colors and Backgrounds */
+/* #endregion Common Margins and Paddings */
+
+/* #region Common Colors and Backgrounds */
 
 .neutral_medium,
 #app_header,
@@ -107,6 +118,11 @@ main .row > [class^="col_"],
   color: var(--primary);
 }
 
+#demo p,
+#benefits p {
+  color: var(--neutral-dark);
+}
+
 #planning,
 #testimonials .row .card,
 #benefits,
@@ -123,7 +139,48 @@ main .row > [class^="col_"],
   background-color: var(--lighter);
 }
 
-/* #endregion Colors and Backgrounds */
+/* #endregion Common Colors and Backgrounds */
+
+/* #region Common Font */
+
+#demo p,
+#demo a,
+#testimonials blockquote + span,
+#benefits .card .index,
+#benefits .card h4,
+#benefits .card .btn.md,
+#about .card_quotes blockquote,
+#cta .btn {
+  font-weight: 700;
+}
+
+#testimonials h4,
+#cta h4 {
+  font-weight: 400;
+}
+
+#planning h2,
+#testimonials h2,
+#benefits h2,
+#about h2,
+#about .card_quotes blockquote,
+#cta h3 {
+  font-size: 2rem;
+}
+
+#demo h3,
+#planning h3 {
+  font-size: 1.5rem;
+}
+
+#testimonials h4,
+#testimonials blockquote + span,
+#cta h4,
+#cta .btn {
+  font-size: 1.25rem;
+}
+
+/* #endregion Common Font */
 
 /* #endregion Common */
 
@@ -218,7 +275,7 @@ main .row > [class^="col_"],
 }
 
 .btn.sm {
-  padding: 8px;
+  padding: 10px;
 }
 
 .btn.md {
@@ -324,13 +381,6 @@ main .row > [class^="col_"],
   color: var(--neutral-medium);
 }
 
-#demo p,
-#demo a,
-#demo .d_flex > div:last-of-type,
-#benefits .card .btn.md {
-  margin-top: 30px;
-}
-
 #planning h2 {
   margin: 60px 0;
 }
@@ -348,10 +398,6 @@ main .row > [class^="col_"],
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-#testimonials h4 {
-  font-weight: 400;
 }
 
 #testimonials .card img {
@@ -373,21 +419,12 @@ main .row > [class^="col_"],
   padding-left: 10px;
 }
 
-#testimonials blockquote + span {
-  font-weight: 700;
-}
-
-#benefits .card .index,
-#benefits .card h4 {
-  font-weight: 700;
-}
-
 #benefits .index {
   font-size: 2.5rem;
 }
 
-#benefits .card .btn.md {
-  font-weight: 700;
+#benefits .card h4 {
+  font-size: 1.6rem;
 }
 
 #about h2 {
@@ -396,6 +433,7 @@ main .row > [class^="col_"],
 
 #about .card_text p {
   margin: 50px 0;
+  line-height: 40px;
 }
 
 #about .img_wrapper {
@@ -419,20 +457,9 @@ main .row > [class^="col_"],
   border-radius: 50%;
 }
 
-#about .card_quotes blockquote {
-  font-weight: 700;
-}
-
-#cta h4 {
-  font-weight: 400;
-}
-
 #cta h2 {
   color: var(--accent);
-}
-
-#cta .btn {
-  font-weight: 700;
+  font-size: 4rem;
 }
 
 #cta .privacy {
@@ -525,9 +552,18 @@ main .row > [class^="col_"],
     transform: translate(11.5%, 0);
   }
 
+  #planning h2,
+  #about h2 {
+    font-size: 4rem;
+  }
+
   #planning .row .img_wrapper img,
   #testimonials h2 {
     margin: 50px 0;
+  }
+
+  #testimonials h2 {
+    font-size: 2.5rem;
   }
 
   #testimonials .card {
@@ -548,6 +584,10 @@ main .row > [class^="col_"],
     margin-bottom: 50px;
   }
 
+  #benefits .index {
+    font-size: 4rem;
+  }
+
   #about .img_wrapper {
     text-align: center;
   }
@@ -558,6 +598,14 @@ main .row > [class^="col_"],
 
   #about .img_wrapper::before {
     right: 10%;
+  }
+
+  #cta h3 {
+    font-size: 3rem;
+  }
+
+  #cta h2 {
+    font-size: 6rem;
   }
 
   #app_footer > .container {
@@ -642,8 +690,16 @@ main .row > [class^="col_"],
     align-items: flex-end;
   }
 
+  #planning h2 {
+    font-size: 2rem;
+  }
+
   #planning .row .img_wrapper img {
     margin: 120px 0;
+  }
+
+  #testimonials h2 {
+    font-size: 3rem;
   }
 
 }

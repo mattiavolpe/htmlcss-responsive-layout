@@ -126,8 +126,14 @@ main [class^="col_"] {
   background-color: var(--neutral-lighter);
 }
 
-#planning {
+#planning,
+#testimonials .row *:not(:first-child),
+#benefits {
   background-color: var(--primary);
+}
+
+#benefits .row .card {
+  background-color: var(--lighter);
 }
 
 /* #endregion Main */

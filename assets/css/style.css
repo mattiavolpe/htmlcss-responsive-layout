@@ -108,6 +108,14 @@ main [class^="col_"] {
   height: 100px;
 }
 
+.debug #cta {
+  background-color: var(--primary);
+}
+
+.debug #cta .container {
+  height: 100px;
+}
+
 /* #endregion Debug */
 
 

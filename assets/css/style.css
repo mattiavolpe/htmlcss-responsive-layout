@@ -1,5 +1,103 @@
+/* #region Common */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --primary: #9792e4;
+  --lighter: #ffffff;
+  --darker: #151515;
+  --neutral-dark: #333333;
+  --neutral-lighter: #b5ddff;
+  --neutral-medium: #0084fd;
+  --accent: #fdc15f;
+}
+
+/* #endregion Common */
+
+/* #region Utilities */
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col_1 {
+  width: calc(100% / 12);
+}
+
+.col_2 {
+  width: calc(100% / 12 * 2);
+}
+
+.col_3 {
+  width: 25%;
+}
+
+.col_4 {
+  width: calc(100% / 12 * 4);
+}
+
+.col_5 {
+  width: calc(100% / 12 * 5);
+}
+
+.col_6 {
+  width: 50%;
+}
+
+.col_7 {
+  width: calc(100% / 12 * 7);
+}
+
+.col_8 {
+  width: calc(100% / 12 * 8);
+}
+
+.col_9 {
+  width: 75%;
+}
+
+.col_10 {
+  width: calc(100% / 12 * 10);
+}
+
+.col_11 {
+  width: calc(100% / 12 * 11);
+}
+
+.col_12 {
+  width: 100%;
+}
+
+/* #endregion Utilities */
+
+/* #region Debug */
+
+.debug * {
+  outline: 1px solid lime;
+}
+
+.debug [class^="col_"] {
+  height: 100px;
+}
+
+/* #endregion Debug */
+
+
+/* #region Header */
+
+#app_header {
+  height: 100px;
+  background-color: var(--neutral-medium);
+}
+
+/* #endregion Header */

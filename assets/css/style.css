@@ -153,6 +153,11 @@ main .row > [class^="col_"] {
   padding: 8px 50px;
 }
 
+.btn.big {
+  padding: 15px 100px;
+  border-radius: 40px;
+}
+
 .btn.circle {
   position: relative;
   width: 60px;
@@ -270,7 +275,8 @@ main .row > [class^="col_"] {
 
 #planning,
 #testimonials .row .card,
-#benefits {
+#benefits,
+#cta {
   background-color: var(--primary);
 }
 
@@ -417,6 +423,42 @@ main .row > [class^="col_"] {
   color: var(--lighter);
 }
 
+#cta {
+  color: var(--lighter);
+}
+
+#cta h4 {
+  font-weight: 400;
+}
+
+#cta h3 {
+  margin: 40px 0;
+}
+
+#cta h2 {
+  margin: 40px 0;
+  color: var(--accent);
+}
+
+#cta .btn {
+  color: var(--primary);
+  font-weight: 700;
+  margin: 40px 0;
+}
+
+#cta .privacy {
+  text-decoration: underline;
+}
+
+#cta div > .classroom::before,
+#cta div > .classroom::after {
+  display: inline-block;
+  font: var(--fa-font-solid);
+  content: "\f111";
+  scale: 0.3;
+}
+
+
 /* #endregion Main */
 
 /* #region Footer */
@@ -502,6 +544,7 @@ main .row > [class^="col_"] {
   #testimonials .card {
     display: flex;
     align-items: center;
+    text-align: left;
   }
 
   #testimonials blockquote {

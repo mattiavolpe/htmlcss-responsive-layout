@@ -47,8 +47,8 @@ a {
 #demo,
 section,
 #app_footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 main .row > [class^="col_"] {
@@ -56,6 +56,49 @@ main .row > [class^="col_"] {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/* #region Colors and Backgrounds */
+
+.neutral_medium,
+#app_header,
+#demo i.fa-apple,
+#planning .row > div:first-child,
+#testimonials .card,
+#benefits h2,
+#benefits .card .btn.md,
+#about .card_quotes .btn.sm,
+#cta,
+#app_footer {
+  color: var(--lighter);
+}
+
+#testimonials h2,
+#benefits .card .index,
+#benefits .card h4,
+#about h2,
+#about .card_quotes,
+#cta .btn,
+#app_footer .footer_link {
+  color: var(--primary);
+}
+
+#planning,
+#testimonials .row .card,
+#benefits,
+#benefits .card .btn.md,
+#about .card_quotes .btn.sm,
+#cta {
+  background-color: var(--primary);
+}
+
+#planning .row > div:last-child .card,
+#planning h3,
+#planning h3 + p,
+#benefits .row .card {
+  background-color: var(--lighter);
+}
+
+/* #endregion Colors and Backgrounds */
 
 /* #endregion Common */
 
@@ -139,6 +182,10 @@ main .row > [class^="col_"] {
   border-radius: 50px;
 }
 
+.text_center {
+  text-align: center;
+}
+
 .btn {
   display: inline-block;
   padding: 8px 15px;
@@ -174,11 +221,6 @@ main .row > [class^="col_"] {
 
 .neutral_medium {
   background-color: var(--neutral-medium);
-  color: var(--lighter);
-}
-
-.text_center {
-  text-align: center;
 }
 
 /* #endregion Utilities */
@@ -219,8 +261,6 @@ main .row > [class^="col_"] {
   left: 0;
   z-index: 1;
   padding: 25px 0;
-  background-color: var(--neutral-medium);
-  color: var(--lighter);
   box-shadow: 0 1px 5px 0 var(--neutral-dark);
 }
 
@@ -254,10 +294,6 @@ main .row > [class^="col_"] {
   padding-bottom: 0;
 }
 
-#demo i.fa-apple {
-  color: var(--lighter);
-}
-
 #demo i.fa-4x {
   margin-bottom: 30px;
 }
@@ -273,29 +309,13 @@ main .row > [class^="col_"] {
   margin-top: 30px;
 }
 
-#planning,
-#testimonials .row .card,
-#benefits,
-#cta {
-  background-color: var(--primary);
-}
-
-#planning .row > div:first-child {
-  color: var(--lighter);
-}
-
 #planning h2 {
   margin: 60px 0;
-}
-
-#planning .row > div:last-child .card {
-  background-color: var(--lighter);
 }
 
 #planning h3,
 #planning h3 + p {
   margin: 30px 0;
-  background-color: var(--lighter);
 }
 
 #planning h3 + p {
@@ -314,12 +334,7 @@ main .row > [class^="col_"] {
 }
 
 #testimonials h2 {
-  color: var(--primary);
   margin: 30px 0;
-}
-
-#testimonials .card {
-  color: var(--lighter);
 }
 
 #testimonials .card img {
@@ -351,16 +366,10 @@ main .row > [class^="col_"] {
 
 #benefits h2 {
   margin-bottom: 30px;
-  color: var(--lighter);
-}
-
-#benefits .row .card {
-  background-color: var(--lighter);
 }
 
 #benefits .card .index,
 #benefits .card h4 {
-  color: var(--primary);
   font-weight: 700;
 }
 
@@ -373,23 +382,16 @@ main .row > [class^="col_"] {
 }
 
 #benefits .card .btn.md {
-  background-color: var(--primary);
-  color: var(--lighter);
   font-weight: 700;
   margin-top: 30px;
 }
 
 #about h2 {
   margin-bottom: 50px;
-  color: var(--primary);
 }
 
 #about .card_text p {
   margin: 50px 0;
-}
-
-#about .card_quotes {
-  color: var(--primary);
 }
 
 #about .img_wrapper {
@@ -418,15 +420,6 @@ main .row > [class^="col_"] {
   margin: 30px 0;
 }
 
-#about .card_quotes .btn.sm {
-  background-color: var(--primary);
-  color: var(--lighter);
-}
-
-#cta {
-  color: var(--lighter);
-}
-
 #cta h4 {
   font-weight: 400;
 }
@@ -441,7 +434,6 @@ main .row > [class^="col_"] {
 }
 
 #cta .btn {
-  color: var(--primary);
   font-weight: 700;
   margin: 40px 0;
 }
@@ -464,7 +456,6 @@ main .row > [class^="col_"] {
 
 #app_footer {
   background-color: var(--neutral-dark);
-  color: var(--lighter);
 }
 
 #app_footer .container > p {
@@ -472,7 +463,6 @@ main .row > [class^="col_"] {
 }
 
 #app_footer .footer_link {
-  color: var(--primary);
   text-decoration: underline;
 }
 

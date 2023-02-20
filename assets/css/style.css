@@ -45,7 +45,7 @@ section,
   padding-bottom: 60px;
 }
 
-main [class^="col_"] {
+main .row > [class^="col_"] {
   margin-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
@@ -62,6 +62,7 @@ main [class^="col_"] {
 
 .d_flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .row {
@@ -129,9 +130,22 @@ main [class^="col_"] {
   border-radius: 20px;
 }
 
-.white {
+.btn.md {
+  padding: 8px 50px;
+}
+
+.lighter {
   background-color: #ffffff;
   color: var(--darker);
+}
+
+.neutral_medium {
+  background-color: var(--neutral-medium);
+  color: var(--lighter);
+}
+
+.text_center {
+  text-align: center;
 }
 
 /* #endregion Utilities */
@@ -170,6 +184,7 @@ main [class^="col_"] {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
   padding: 25px 0;
   background-color: var(--neutral-medium);
   color: var(--lighter);
@@ -200,6 +215,30 @@ main [class^="col_"] {
 
 #demo .row .card {
   background-color: var(--neutral-lighter);
+  border-radius: 20px;
+}
+
+#demo .row .card.d_flex {
+  padding-bottom: 0;
+}
+
+#demo i.fa-apple {
+  color: var(--lighter);
+}
+
+#demo i.fa-4x {
+  margin-bottom: 30px;
+}
+
+#demo h3,
+#demo i {
+  color: var(--neutral-medium);
+}
+
+#demo p,
+#demo a,
+#demo .d_flex > div:last-of-type {
+  margin-top: 30px;
 }
 
 #planning,
@@ -224,7 +263,7 @@ main [class^="col_"] {
 
 /* #region Responsive */
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
 
   .container {
     width: 90%;
@@ -281,6 +320,11 @@ main [class^="col_"] {
   #app_header {
     padding: 15px 0;
   }
+
+  #demo .d_flex > div:last-of-type {
+    transform: translate(11.5%, 0);
+  }
+
 }
 
 @media screen and (min-width: 1201px) {
@@ -344,6 +388,12 @@ main [class^="col_"] {
   #app_header .hamburger {
     display: none;
   }
+
+  #demo .d_flex > div:last-of-type {
+    transform: translate(0, 0);
+    align-self: flex-end;
+  }
+
 }
 
 /* #endregion Responsive */

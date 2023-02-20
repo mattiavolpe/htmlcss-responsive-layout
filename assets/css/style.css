@@ -122,6 +122,15 @@ main .row > [class^="col_"] {
 .card {
   padding: 30px;
   height: 100%;
+  border-radius: 20px;
+}
+
+.card.straight {
+  border-radius: 0;
+}
+
+.card.more_rounded {
+  border-radius: 50px;
 }
 
 .btn {
@@ -132,6 +141,15 @@ main .row > [class^="col_"] {
 
 .btn.md {
   padding: 8px 50px;
+}
+
+.btn.circle {
+  position: relative;
+  width: 60px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: 0;
+  background-color: var(--primary);
 }
 
 .lighter {
@@ -215,7 +233,6 @@ main .row > [class^="col_"] {
 
 #demo .row .card {
   background-color: var(--neutral-lighter);
-  border-radius: 20px;
 }
 
 #demo .row .card.d_flex {
@@ -247,6 +264,35 @@ main .row > [class^="col_"] {
   background-color: var(--primary);
 }
 
+#planning .row > div:first-child {
+  color: var(--lighter);
+}
+
+#planning h2 {
+  margin: 60px 0;
+}
+
+#planning .row > div:last-child .card {
+  background-color: var(--lighter);
+}
+
+#planning h3,
+#planning h3 + p {
+  margin: 30px 0;
+  background-color: var(--lighter);
+}
+
+#planning h3 + p {
+  font-style: italic;
+}
+
+#planning .btn.circle > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #benefits .row .card {
   background-color: var(--lighter);
 }
@@ -263,7 +309,7 @@ main .row > [class^="col_"] {
 
 /* #region Responsive */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 
   .container {
     width: 90%;
@@ -325,9 +371,13 @@ main .row > [class^="col_"] {
     transform: translate(11.5%, 0);
   }
 
+  #planning .row .img_wrapper img {
+    margin: 50px 0;
+  }
+
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
 
   .container {
     max-width: 1140px;
@@ -392,6 +442,18 @@ main .row > [class^="col_"] {
   #demo .d_flex > div:last-of-type {
     transform: translate(0, 0);
     align-self: flex-end;
+  }
+
+  #demo .d_flex img {
+    width: 65%;
+  }
+
+  #planning .row {
+    align-items: flex-end;
+  }
+
+  #planning .row .img_wrapper img {
+    margin: 120px 0;
   }
 
 }

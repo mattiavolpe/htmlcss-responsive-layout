@@ -17,7 +17,8 @@
 }
 
 #demo,
-section {
+section,
+#app_footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -116,6 +117,14 @@ main [class^="col_"] {
   height: 100px;
 }
 
+.debug #app_footer {
+  height: 300px;
+}
+
+.debug #app_footer .container {
+  height: 100%;
+}
+
 /* #endregion Debug */
 
 
@@ -145,6 +154,14 @@ main [class^="col_"] {
 }
 
 /* #endregion Main */
+
+/* #region Footer */
+
+#app_footer {
+  background-color: var(--neutral-dark);
+}
+
+/* #endregion Footer */
 
 
 /* #region Responsive */
